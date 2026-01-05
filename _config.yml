@@ -1,0 +1,108 @@
+# Site settings
+title: "Conrad D. Hougen"
+name: "Conrad D. Hougen"
+description: "Applied ML, Bayesian methods, and graph + manifold learning on GitHub Pages using Minimal Mistakes."
+url: "https://YOUR_GITHUB_USERNAME.github.io"
+baseurl: ""
+locale: "en-US"
+
+# Theme settings
+remote_theme: "mmistakes/minimal-mistakes"
+minimal_mistakes_skin: "air"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:categories/:title/
+paginate: 5
+paginate_path: "/page:num/"
+excerpt_separator: "<!--more-->"
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-include-cache
+
+# Author and social
+author:
+  name: "Conrad D. Hougen"
+  avatar: "/assets/img/headshot-placeholder.png"
+  bio: "Applied machine learning researcher with a focus on probabilistic models, graph learning, and signal processing."
+  location: "YOUR_LOCATION"
+  email: "YOUR_EMAIL"
+  links:
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "YOUR_LINKEDIN_URL"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "YOUR_GITHUB_URL"
+    - label: "ORCID"
+      icon: "ai ai-orcid"
+      url: "YOUR_ORCID_URL"
+    - label: "Google Scholar"
+      icon: "ai ai-google-scholar"
+      url: "YOUR_GOOGLE_SCHOLAR_URL"
+    - label: "Dissertation"
+      icon: "fas fa-fw fa-book"
+      url: "YOUR_DEEPBLUE_DISSERTATION_URL"
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: false
+      share: true
+      related: true
+      toc: true
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: single
+      author_profile: false
+      toc: false
+
+# Collections and social sharing
+collections:
+  posts:
+    output: true
+
+# SEO
+seo:
+  type: "Person"
+  name: "Conrad D. Hougen"
+
+# Footer links
+footer:
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:YOUR_EMAIL"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "YOUR_LINKEDIN_URL"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "YOUR_GITHUB_URL"
+    - label: "ORCID"
+      icon: "ai ai-orcid"
+      url: "YOUR_ORCID_URL"
+    - label: "Google Scholar"
+      icon: "ai ai-google-scholar"
+      url: "YOUR_GOOGLE_SCHOLAR_URL"
+
+# Feed and sitemap
+feed:
+  path: feed.xml
+
+# Analytics placeholder
+analytics:
+  provider: ""
