@@ -105,10 +105,11 @@ The site deploys automatically to GitHub Pages when you push to the `main` branc
 
 ### Configuration for GitHub Pages
 
-**Important:** If your site is NOT at `username.github.io` (root domain) but at `username.github.io/repo-name`, you must update `next.config.mjs`:
+This repo is named `conradhougen.github.io` (a root user pages site), so `basePath` and `assetPrefix` in `next.config.mjs` must remain **commented out**. The site is served at `https://conradhougen.github.io` with no path prefix.
+
+If you ever move to a subdirectory repo (`username.github.io/repo-name`), uncomment and set in `next.config.mjs`:
 
 ```javascript
-// Uncomment and set these:
 basePath: '/your-repo-name',
 assetPrefix: '/your-repo-name',
 ```
@@ -193,7 +194,7 @@ Key dependencies:
 - Clear `.next` directory and rebuild
 
 **GitHub Pages shows 404:**
-- Verify `basePath` in `next.config.mjs` matches repository name
+- Confirm `basePath` in `next.config.mjs` is commented out (required for root user pages `conradhougen.github.io`)
 - Check that GitHub Pages source is set to "GitHub Actions"
 - Review workflow run logs in GitHub Actions tab
 

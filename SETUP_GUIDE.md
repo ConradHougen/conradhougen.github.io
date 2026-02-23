@@ -52,9 +52,9 @@ Replace placeholder values with your actual information:
 **If your repo is `username.github.io` (root domain):**
 - No changes needed! The site will work as-is.
 
-**If your repo is `username.github.io/ConradHougenWebsite` (or any other name):**
+**If your repo is named `conradhougen.github.io` (root user pages):**
 
-Edit `next.config.mjs` and uncomment these lines:
+This is a root GitHub Pages site, so `basePath` and `assetPrefix` should remain **commented out** in `next.config.mjs` — no changes needed:
 
 ```javascript
 const nextConfig = {
@@ -62,9 +62,19 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: '/ConradHougenWebsite',  // ← Uncomment and set to your repo name
-  assetPrefix: '/ConradHougenWebsite',  // ← Uncomment and set to your repo name
+  // basePath and assetPrefix are NOT needed for root user pages (username.github.io)
+  // basePath: '/your-repo-name',
+  // assetPrefix: '/your-repo-name',
 };
+```
+
+**If your repo is at a subdirectory (e.g., `username.github.io/repo-name`):**
+
+Edit `next.config.mjs` and uncomment these lines, replacing with your repo name:
+
+```javascript
+basePath: '/your-repo-name',
+assetPrefix: '/your-repo-name',
 ```
 
 ### 5. Enable GitHub Pages
@@ -203,7 +213,7 @@ npm run dev
 
 ### GitHub Pages shows 404
 
-1. Verify `basePath` in `next.config.mjs` matches your repository name
+1. If using a subdirectory repo, verify `basePath` in `next.config.mjs` matches your repository name. For a root user pages repo (`username.github.io`), `basePath` must remain commented out.
 2. Check Settings > Pages is set to "GitHub Actions"
 3. Review the workflow logs in the "Actions" tab
 
