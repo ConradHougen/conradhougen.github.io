@@ -19,8 +19,8 @@ import MenuBookIcon from '@mui/icons-material/MenuBook';
 const contactLinks = [
   {
     label: 'Email',
-    value: 'YOUR_EMAIL',
-    href: 'mailto:YOUR_EMAIL',
+    value: 'chougen@umich.edu',
+    href: 'mailto:chougen@umich.edu',
     icon: <EmailIcon sx={{ fontSize: 40 }} />,
     description: 'Best for direct communication',
   },
@@ -136,7 +136,7 @@ export default function Contact() {
           </Grid>
           <Box sx={{ mt: 3 }}>
             <Typography variant="body1">
-              Email is usually the best way to start a conversation: <strong>YOUR_EMAIL</strong>
+              Email is usually the best way to start a conversation: <strong>chougen@umich.edu</strong>
             </Typography>
           </Box>
         </Card>

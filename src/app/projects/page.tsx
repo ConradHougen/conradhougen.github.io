@@ -16,29 +16,29 @@ import LaunchIcon from '@mui/icons-material/Launch';
 
 const projects = [
   {
-    title: 'MSTML: Multi-Scale Topic Manifold Learning',
+    title: 'Directed Fast Approximate Spectral Sparsification',
     description:
-      'Hierarchical probabilistic model for discovering latent topic structures in high-dimensional text data. Combines graph signal processing with manifold constraints to enforce smoothness across scales while preserving local geometry.',
-    tech: ['Python', 'PyTorch', 'NumPy', 'SciPy', 'Gensim'],
-    github: 'YOUR_GITHUB_URL/mstml',
+      'Algorithm for constructing sparse directed graph approximations that preserve spectral properties of the original dense graph. Extends classical undirected sparsification to the directed setting, where the non-symmetric Laplacian structure requires novel random-walk and effective-resistance techniques.',
+    tech: ['Python', 'NumPy', 'SciPy', 'NetworkX'],
+    github: 'YOUR_GITHUB_URL/directed-spectral-sparsification',
     demo: null,
     highlights: [
-      'Bayesian hierarchical modeling',
-      'Graph-based regularization',
-      'Scalable inference via variational methods',
+      'Spectral approximation for directed graphs',
+      'Sub-quadratic runtime via fast effective-resistance estimates',
+      'Applications to graph signal processing and network analysis',
     ],
   },
   {
-    title: 'UncertainBayesianNetworks',
+    title: 'Nystrom Augmented Compressed Transformers',
     description:
-      'Research implementations of second-order learning and second-order loopy belief propagation for Bayesian networks. Enables decision-making under uncertainty by propagating not just beliefs but also confidence in those beliefs.',
-    tech: ['Python', 'JAX', 'NumPy', 'NetworkX'],
-    github: 'YOUR_GITHUB_URL/uncertain-bayesian-networks',
+      'Transformer architecture augmented with Nyström-based self-attention approximation and model compression techniques to enable efficient inference over long sequences. Reduces the O(n²) attention cost to linear complexity while preserving representational quality through learned landmark selection.',
+    tech: ['Python', 'PyTorch', 'NumPy'],
+    github: 'YOUR_GITHUB_URL/nystrom-compressed-transformers',
     demo: null,
     highlights: [
-      'Second-order belief propagation',
-      'Uncertainty-aware inference',
-      'Distributed decision algorithms',
+      'Linear-complexity Nyström attention approximation',
+      'Structured pruning and quantization for compressed inference',
+      'Scalable to long-context sequence modeling tasks',
     ],
   },
   {

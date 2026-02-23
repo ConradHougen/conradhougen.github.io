@@ -69,7 +69,7 @@ export default function Home() {
 
       {/* What I Do Section */}
       <Container maxWidth="lg" sx={{ py: 8 }}>
-        <Typography variant="h2" align="center" gutterBottom sx={{ mb: 6 }}>
+        <Typography variant="h2" gutterBottom sx={{ mb: 6 }}>
           What I Do
         </Typography>
         <Grid container spacing={4}>
@@ -83,7 +83,7 @@ export default function Home() {
                 <Typography variant="body2" color="text.secondary" paragraph>
                   Information-geometric methods for topic trend analysis, semantic vector search, and retrieval-augmented generation using FAISS, Sentence-Transformers, and manifold learning.
                 </Typography>
-                <Button component={Link} href="/projects" endIcon={<ArrowForwardIcon />}>
+                <Button component={Link} href="/projects" variant="outlined" size="small" endIcon={<ArrowForwardIcon />}>
                   See Projects
                 </Button>
               </CardContent>
@@ -99,7 +99,7 @@ export default function Home() {
                 <Typography variant="body2" color="text.secondary" paragraph>
                   Second-order learning and inference for uncertainty quantification, distributed decision-making, and causal inference. Developed Second-Order Loopy Belief Propagation algorithm.
                 </Typography>
-                <Button component={Link} href="/blog" endIcon={<ArrowForwardIcon />}>
+                <Button component={Link} href="/blog" variant="outlined" size="small" endIcon={<ArrowForwardIcon />}>
                   Read Insights
                 </Button>
               </CardContent>
@@ -115,7 +115,7 @@ export default function Home() {
                 <Typography variant="body2" color="text.secondary" paragraph>
                   Published research in top conferences (MLSP, FUSION, HDSR, CAMSAP). Multi-year national lab collaborations (PNNL, ARL). Production modem software at Qualcomm for 4G/5G.
                 </Typography>
-                <Button component={Link} href="/contact" endIcon={<ArrowForwardIcon />}>
+                <Button component={Link} href="/contact" variant="outlined" size="small" endIcon={<ArrowForwardIcon />}>
                   Work Together
                 </Button>
               </CardContent>
@@ -209,7 +209,7 @@ export default function Home() {
           </Box>
         </Stack>
         <Stack direction="row" spacing={2} sx={{ mt: 4 }}>
-          <Button component={Link} href="/projects" variant="contained" size="large">
+          <Button component={Link} href="/projects" variant="outlined" size="large">
             View Projects Portfolio
           </Button>
           <Button component={Link} href="/career" variant="outlined" size="large">

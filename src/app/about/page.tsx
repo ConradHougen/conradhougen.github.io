@@ -46,7 +46,7 @@ export default function About() {
         </Typography>
         <Box component="ul" sx={{ pl: 3, '& li': { mb: 1 } }}>
           <li>
-            <Typography variant="body1">Research Scientist at Anduril Industries</Typography>
+            <Typography variant="body1">Research Scientist at Anduril Industries — Broomfield, CO</Typography>
           </li>
           <li>
             <Typography variant="body1">PhD in Signal & Image Processing and ML, University of Michigan</Typography>
@@ -56,6 +56,9 @@ export default function About() {
           </li>
           <li>
             <Typography variant="body1">BS Applied Math & BS ECE, University of Colorado Boulder</Typography>
+          </li>
+          <li>
+            <Typography variant="body1">Email: chougen@umich.edu</Typography>
           </li>
         </Box>
       </Box>
@@ -89,10 +92,13 @@ export default function About() {
         </Typography>
         <Box component="ul" sx={{ pl: 3, '& li': { mb: 1 } }}>
           <li>
-            <Typography variant="body1">Python (PyTorch, Scikit-Learn, Pandas, NetworkX)</Typography>
+            <Typography variant="body1">Python (PyTorch, Scikit-Learn, Pandas, NumPy, SciPy, NetworkX, Gensim, NLTK)</Typography>
           </li>
           <li>
             <Typography variant="body1">C, C++, MATLAB, Rust</Typography>
+          </li>
+          <li>
+            <Typography variant="body1">Docker, Kubernetes</Typography>
           </li>
           <li>
             <Typography variant="body1">Software & Embedded Systems Engineering</Typography>
