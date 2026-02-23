@@ -29,7 +29,7 @@ export default function Footer() {
           <Stack direction="row" spacing={2}>
             <IconButton
               component={Link}
-              href="mailto:YOUR_EMAIL"
+              href="mailto:chougen@umich.edu"
               aria-label="Email"
               sx={{ color: 'white' }}
             >
