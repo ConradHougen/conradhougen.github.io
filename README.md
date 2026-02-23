@@ -121,7 +121,7 @@ The filename should follow the pattern: `YYYY-MM-DD-post-slug.md`
 Replace all placeholder values (YOUR_EMAIL, YOUR_LINKEDIN_URL, etc.) in:
 - `src/app/contact/page.tsx`
 - `src/components/Footer.tsx`
-- `next.config.mjs` (uncomment and set basePath if needed)
+- `next.config.mjs` (basePath is only needed if deploying to a subdirectory path)
 
 ### Modify Theme Colors
 
@@ -132,13 +132,15 @@ Edit `src/theme/theme.ts` to customize:
 
 ### Configure for GitHub Pages
 
-1. If your repository is not at the root (e.g., `username.github.io/repo-name`), uncomment and update in `next.config.mjs`:
+This repo is named `conradhougen.github.io`, making it a root user pages site. The `basePath` and `assetPrefix` in `next.config.mjs` should remain **commented out**.
+
+If you ever move this to a subdirectory repo (e.g., `username.github.io/repo-name`), uncomment and set them in `next.config.mjs`:
 ```javascript
 basePath: '/your-repo-name',
 assetPrefix: '/your-repo-name',
 ```
 
-2. Enable GitHub Pages in your repository settings:
+1. Enable GitHub Pages in your repository settings:
    - Go to Settings > Pages
    - Source: GitHub Actions
 
