@@ -33,7 +33,7 @@ export default function Home() {
             Conrad D. Hougen
           </Typography>
           <Typography variant="h5" sx={{ mb: 4, opacity: 0.9 }}>
-            Semantic Embeddings • RAG & LLMs • Bayesian Networks • Information Geometry
+            Graph Signal Processing • Longitudinal and Relational Topic Modeling • Uncertain Bayesian Networks • Distributed Cloud and Embedded Systems
           </Typography>
           <Typography variant="body1" sx={{ mb: 4, fontSize: '1.1rem', opacity: 0.95 }}>
             ML/AI researcher and software engineer specializing in geometric embeddings for semantic search,
