@@ -32,8 +32,8 @@ export default function Footer() {
             Conrad D. Hougen
           </Typography>
           <Typography variant="body2" align="center" sx={{ maxWidth: 600 }}>
-            Applied machine learning researcher focused on Bayesian methods, graph learning,
-            and building reliable ML systems.
+            Applied machine learning, signal processing, and artificial intelligence research scientist focused on
+            relational models, graph signal processing, probabilistic methods, and building trustworthy AI systems.
           </Typography>
           <Stack direction="row" spacing={2}>
             <Tooltip title={copied ? 'Copied!' : 'Copy email'} placement="top">
