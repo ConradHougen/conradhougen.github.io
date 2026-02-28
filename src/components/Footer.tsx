@@ -46,14 +46,6 @@ export default function Footer() {
               </IconButton>
             </Tooltip>
             <IconButton
-              component={Link}           
-              href="mailto:chougen@umich.edu"
-              aria-label="Email"
-              sx={{ color: 'white' }}
-            >
-              <EmailIcon />
-            </IconButton>
-            <IconButton
               component={Link}
               href="https://www.linkedin.com/in/conrad-hougen/"
               target="_blank"
