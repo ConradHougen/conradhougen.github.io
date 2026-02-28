@@ -1,4 +1,5 @@
 'use client';
+import { useState } from 'react';
 import {
   Container,
   Typography,
@@ -15,12 +16,14 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import SchoolIcon from '@mui/icons-material/School';
 import MenuBookIcon from '@mui/icons-material/MenuBook';
+import CheckIcon from '@mui/icons-material/Check';
 
 const contactLinks = [
   {
     label: 'Email',
     value: 'chougen@umich.edu',
-    href: 'mailto:chougen@umich.edu',
+    href: null,
+    copyText: 'chougen@umich.edu',
     icon: <EmailIcon sx={{ fontSize: 40 }} />,
     description: 'Best for direct communication',
   },
@@ -62,6 +65,14 @@ const contactLinks = [
 ];
 
 export default function Contact() {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = (text: string) => {
+    navigator.clipboard.writeText(text);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+
   return (
     <Container maxWidth="lg" sx={{ py: 8 }}>
       <Typography variant="h2" gutterBottom sx={{ mb: 2 }}>
@@ -92,17 +103,29 @@ export default function Contact() {
                   <Typography variant="body2" color="text.secondary">
                     {link.description}
                   </Typography>
-                  <Button
-                    component={Link}
-                    href={link.href}
-                    target={link.href.startsWith('mailto:') ? '_self' : '_blank'}
-                    rel={link.href.startsWith('mailto:') ? undefined : 'noopener noreferrer'}
-                    variant="outlined"
-                    size="small"
-                    disabled={link.href.includes('YOUR_')}
-                  >
-                    {link.value}
-                  </Button>
+                  {'copyText' in link ? (
+                    <Button
+                      variant="outlined"
+                      size="small"
+                      color={copied ? 'success' : 'primary'}
+                      startIcon={copied ? <CheckIcon /> : undefined}
+                      onClick={() => handleCopy(link.copyText!)}
+                    >
+                      {copied ? 'Copied!' : link.value}
+                    </Button>
+                  ) : (
+                    <Button
+                      component={Link}
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      variant="outlined"
+                      size="small"
+                      disabled={link.href.includes('YOUR_')}
+                    >
+                      {link.value}
+                    </Button>
+                  )}
                 </Stack>
               </CardContent>
             </Card>

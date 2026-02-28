@@ -1,12 +1,21 @@
 'use client';
-import React from 'react';
-import { Box, Container, Typography, Link, IconButton, Stack } from '@mui/material';
+import { useState } from 'react';
+import { Box, Container, Typography, Link, IconButton, Stack, Tooltip } from '@mui/material';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
+import CheckIcon from '@mui/icons-material/Check';
 import SchoolIcon from '@mui/icons-material/School';
 
 export default function Footer() {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopyEmail = () => {
+    navigator.clipboard.writeText('chougen@umich.edu');
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+
   return (
     <Box
       component="footer"
@@ -27,8 +36,17 @@ export default function Footer() {
             and building reliable ML systems.
           </Typography>
           <Stack direction="row" spacing={2}>
+            <Tooltip title={copied ? 'Copied!' : 'Copy email'} placement="top">
+              <IconButton
+                onClick={handleCopyEmail}
+                aria-label="Copy email address"
+                sx={{ color: copied ? 'success.light' : 'white', transition: 'color 0.2s' }}
+              >
+                {copied ? <CheckIcon /> : <EmailIcon />}
+              </IconButton>
+            </Tooltip>
             <IconButton
-              component={Link}
+              component={Link}           
               href="mailto:chougen@umich.edu"
               aria-label="Email"
               sx={{ color: 'white' }}
@@ -37,7 +55,7 @@ export default function Footer() {
             </IconButton>
             <IconButton
               component={Link}
-              href="YOUR_LINKEDIN_URL"
+              href="https://www.linkedin.com/in/conrad-hougen/"
               target="_blank"
               aria-label="LinkedIn"
               sx={{ color: 'white' }}
@@ -46,7 +64,7 @@ export default function Footer() {
             </IconButton>
             <IconButton
               component={Link}
-              href="YOUR_GITHUB_URL"
+              href="https://github.com/ConradHougen"
               target="_blank"
               aria-label="GitHub"
               sx={{ color: 'white' }}
@@ -55,7 +73,7 @@ export default function Footer() {
             </IconButton>
             <IconButton
               component={Link}
-              href="YOUR_GOOGLE_SCHOLAR_URL"
+              href="https://scholar.google.com/citations?user=DDK5RxMAAAAJ&hl=en"
               target="_blank"
               aria-label="Google Scholar"
               sx={{ color: 'white' }}
