@@ -143,17 +143,17 @@ export default function Contact() {
           </Typography>
           <Grid container spacing={2}>
             <Grid item xs={12} md={6}>
-              <ul style={{ margin: 0 }}>
-                <li>Bayesian inference and uncertainty quantification</li>
-                <li>Graph learning and signal processing</li>
-                <li>Multi-scale topic modeling</li>
+              <ul style={{ margin: 0 }}>                
+                <li>Graph ML and graph signal processing</li>
+                <li>Bayesian methods and uncertainty quantification</li>
+                <li>Multi-resolution geometric learning</li>
               </ul>
             </Grid>
             <Grid item xs={12} md={6}>
               <ul style={{ margin: 0 }}>
-                <li>Distributed decision-making systems</li>
-                <li>Production ML system design</li>
-                <li>Research-to-production pipelines</li>
+                <li>Distributed computational intelligence</li>
+                <li>Embedded systems and edge computing</li>
+                <li>Probabilistic and randomized algorithms</li>
               </ul>
             </Grid>
           </Grid>
