@@ -113,7 +113,7 @@ export default function Home() {
                   Research to Production
                 </Typography>
                 <Typography variant="body2" color="text.secondary" paragraph>
-                  Published research in top conferences (MLSP, FUSION, HDSR, CAMSAP). Multi-year national lab collaborations (PNNL, ARL). Production modem software at Qualcomm for 4G/5G.
+                  Multiple peer-reviewed articles published in competitive ML and signal processing venues (IEEE CAMSAP, IEEE MLSP, IEEE FUSION, Harvard Data Science Review Journal) with significant additional research presentations (ETI Workshops, CoDA, TADA, SIAM CSE). Multi-year national lab fellowships and internships (ETI, PNNL, ARL). Production software development for Anduril Lattice and Qualcomm Snapdragon.
                 </Typography>
                 <Button component={Link} href="/contact" variant="outlined" size="small" endIcon={<ArrowForwardIcon />}>
                   Work Together
@@ -136,25 +136,28 @@ export default function Home() {
                 Recent Focus
               </Typography>
               <Typography variant="body1" color="text.secondary">
-                Information geometry and semantic embeddings for RAG/vector search, relational topic modeling for temporal document analysis, and uncertainty-aware distributed decision-making in Bayesian networks.
+                Information geometric and multi-resolution semantic embeddings, relational topic modeling for temporal document analysis, and uncertainty-aware learning and inference in Bayesian networks.
               </Typography>
             </Grid>
             <Grid item xs={12} md={4}>
               <Typography variant="h6" gutterBottom>
-                Tooling
+                Skills & Tools
               </Typography>
               <Stack direction="row" spacing={1} flexWrap="wrap" sx={{ gap: 1 }}>
+                <Chip label="C" />
+                <Chip label="Python" />
+                <Chip label="Rust" />
+                <Chip label="Kubernetes" />
+                <Chip label="Docker" />
+                <Chip label="Nix" />
                 <Chip label="FAISS" />
                 <Chip label="Sentence-Transformers" />
-                <Chip label="LangChain" />
                 <Chip label="PyTorch" />
                 <Chip label="PHATE" />
                 <Chip label="NetworkX" />
                 <Chip label="Gensim" />
                 <Chip label="NLTK" />
                 <Chip label="Scikit-Learn" />
-                <Chip label="C/C++" />
-                <Chip label="MATLAB" />
               </Stack>
             </Grid>
             <Grid item xs={12} md={4}>
@@ -162,7 +165,7 @@ export default function Home() {
                 Research to Production
               </Typography>
               <Typography variant="body1" color="text.secondary">
-                Published papers in MLSP, FUSION, HDSR, CAMSAP, and CoDA conferences. Multi-year collaborations with PNNL and Army Research Lab. 7+ years professional software engineering experience.
+                Published papers in CAMSAP, MLSP, FUSION, HDSR, and CoDA. Multi-year collaborations with PNNL and Army Research Lab. 7+ years professional software engineering experience.
               </Typography>
             </Grid>
           </Grid>
@@ -177,10 +180,10 @@ export default function Home() {
         <Stack spacing={3}>
           <Box>
             <Typography variant="h6" gutterBottom>
-              Geometric Embeddings for Semantic Search & RAG
+              Geometric Embeddings for Semantic Graph Search & RAG
             </Typography>
             <Typography variant="body1" color="text.secondary">
-              Developed information-geometric methods for topic trend analysis and semantic vector search in large document corpora (arXiv, OSTI, Scopus). Built MSTML framework using FAISS, Sentence-Transformers, and manifold learning for relational and longitudinal semantic embeddings with applications to RAG and retrieval systems.
+              Developed information-geometric methods for topic trend analysis and semantic vector search in large document corpora (arXiv, OSTI, Scopus). Built MSTML framework using FAISS, Sentence-Transformers, and manifold learning for relational and longitudinal semantic embeddings with applications to trustworthy AI and retrieval systems.
             </Typography>
           </Box>
           <Box>
