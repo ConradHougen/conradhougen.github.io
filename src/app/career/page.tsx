@@ -58,10 +58,12 @@ export default function Career() {
                 </Typography>
                 <Stack direction="row" spacing={1} flexWrap="wrap" sx={{ gap: 1 }}>
                   <Chip label="Autonomous Systems" size="small" />
-                  <Chip label="ML Research" size="small" />
-                  <Chip label="Real-time Inference" size="small" />
-                  <Chip label="C++" size="small" />
+                  <Chip label="Distributed Systems" size="small" />
+                  <Chip label="Microservice Architecture" size="small" />
+                  <Chip label="Rust" size="small" />
                   <Chip label="Python" size="small" />
+                  <Chip label="Kubernetes" size="small" />
+                  <Chip label="Docker" size="small" />
                 </Stack>
               </Paper>
             </TimelineContent>
