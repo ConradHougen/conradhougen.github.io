@@ -20,8 +20,8 @@ import Link from 'next/link';
 
 const navItems = [
   { label: 'Home', href: '/' },
-  { label: 'About', href: '/about' },
   { label: 'Career', href: '/career' },
+  { label: 'About', href: '/about' },
   { label: 'Blog', href: '/blog' },
   { label: 'Contact', href: '/contact' },
 ];

@@ -92,7 +92,7 @@ export default function About() {
         </Typography>
         <Box component="ul" sx={{ pl: 3, '& li': { mb: 1 } }}>
           <li>
-            <Typography variant="body1"><strong>Languages:</strong> C, Python, C++, MATLAB, Julia, Java, Rust</Typography>
+            <Typography variant="body1"><strong>Languages:</strong> C, Python, Rust, C++, MATLAB, Julia, Java</Typography>
           </li>
           <li>
             <Typography variant="body1"><strong>ML/AI Libraries:</strong> PyTorch, PyG, Scikit-Learn, FAISS, Sentence-Transformers, LangChain, PHATE, Pandas, NumPy, Gensim, NLTK, Matplotlib, Seaborn, NetworkX, HyperNetX, spaCy</Typography>
@@ -101,10 +101,10 @@ export default function About() {
             <Typography variant="body1"><strong>MLOps & LLMs:</strong> HuggingFace, Ollama, Databricks, OpenSearch, Claude Code, Codex</Typography>
           </li>
           <li>
-            <Typography variant="body1"><strong>Cloud & Infra:</strong> Docker, Heroku, NextCloud</Typography>
+            <Typography variant="body1"><strong>Cloud & Infra:</strong> Kubernetes, Docker, AWS EKS, Heroku, NextCloud</Typography>
           </li>
           <li>
-            <Typography variant="body1"><strong>Software Dev:</strong> GitHub, Perforce, Jenkins, JIRA, VSCode, PyCharm, SlickEdit</Typography>
+            <Typography variant="body1"><strong>Software Dev:</strong> GitHub, Perforce, JIRA, CircleCI, Jenkins, GitHub Actions, VSCode, PyCharm, SlickEdit</Typography>
           </li>
         </Box>
       </Box>
