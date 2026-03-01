@@ -23,8 +23,8 @@ export default function Blog() {
         Blog
       </Typography>
       <Typography variant="body1" paragraph sx={{ mb: 6, fontSize: '1.1rem', color: 'text.secondary' }}>
-        Notes on applied machine learning, Bayesian modeling, graph + manifold learning,
-        and the engineering work required to ship them.
+        Opinion pieces and tutorials related to graph theory, software engineering, probabilistic methods, 
+        AI/ML, embedded systems, and various additional topics of interest.
       </Typography>
 
       {posts.length > 0 ? (
@@ -106,12 +106,12 @@ export default function Blog() {
             <ul>
               <li>
                 <Typography variant="body1">
-                  Structure-aware learning on graphs and manifolds
+                  Structure-aware learning with graphs and manifolds
                 </Typography>
               </li>
               <li>
                 <Typography variant="body1">
-                  Bayesian inference, calibration, and uncertainty-aware decision-making
+                  Bayesian networks, calibration, and uncertainty-aware decision-making
                 </Typography>
               </li>
             </ul>
@@ -120,12 +120,12 @@ export default function Blog() {
             <ul>
               <li>
                 <Typography variant="body1">
-                  Evaluation harnesses and observability for ML systems
+                  Evaluation harnesses and observability for AI systems
                 </Typography>
               </li>
               <li>
                 <Typography variant="body1">
-                  Collaborating across research and production teams
+                  Software engineering for scalable and real-time systems
                 </Typography>
               </li>
             </ul>
